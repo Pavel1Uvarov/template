@@ -1,0 +1,28 @@
+@import 'variables';
+
+body {
+  background: $grey;
+}
+.row {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: $red;
+  &_block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    &:hover {
+      background: green;
+      zoom: 1.5;
+      transition: all 4s;
+    }
+  }
+}
